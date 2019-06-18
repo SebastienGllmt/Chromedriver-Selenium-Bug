@@ -1,0 +1,2 @@
+# README
+This folder is a slightly modified version of [this project by Yung Tsao](https://github.com/yunshansimon/fydeos-crx-parser) that outputs CRX public key information and also implements the broken CRX parsing logic that causes the bug in this bug report

@@ -1,0 +1,38 @@
+{
+  "name": "CRX3",
+  "version": "1.0.0",
+  "description": "CRX3 extension ID error repro",
+  "scripts": {
+    "clean": "rimraf build/ dev/ *.zip *.crx",
+    "test-common": "cucumber-js --require-module '@babel/register' --compiler es6:@babel/register",
+    "test-v2": "npm run test-common -- tests/test.feature --file yoroi_v2",
+    "test-v3": "npm run test-common -- tests/test.feature --file yoroi_v3",
+    "pubkey-v2": "node ./simple_crx_parser/pubKeyParser --file yoroi_v2",
+    "pubkey-v3": "node ./simple_crx_parser/pubKeyParser --file yoroi_v3",
+    "pubkey-broken": "node ./simple_crx_parser/pubKeyParser --file yoroi_v3 --useIncorrect"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/plugin-proposal-decorators": "7.4.4",
+    "@babel/plugin-proposal-export-default-from": "7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "@babel/register": "7.4.4",
+    "@babel/runtime": "7.4.5",
+    "@babel/runtime-corejs2": "7.4.5",
+    "babel-plugin-add-module-exports": "1.0.2",
+    "chromedriver": "75.0.0",
+    "cucumber": "5.1.0",
+    "rimraf": "2.6.3",
+    "selenium-webdriver": "4.0.0-alpha.3",
+    "minimist": "1.2.0",
+    "combine-streams": "1.0.0",
+    "debug": "3.1.0",
+    "unzip": "0.1.11"
+  }
+}
