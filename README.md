@@ -5,6 +5,7 @@ Need to get this fixed before [crx2 full deprecation](https://www.chromium.org/c
 Versions used:
 1) Chromedriver `75.0.3770.90` ([link](https://www.npmjs.com/package/chromedriver))
 1) Selenium-webdriver `4.0.0-alpha.3` ([link](https://www.npmjs.com/package/selenium-webdriver))
+1) OS: macOS Mojave `10.14.4`
 
 ### Issue Description
 Selenium provides an `addExtensions` hook to install CRX files into Chromedriver on launch. This hook works fine for CRX2 files, but the extension ID is incorrect when given an CRX3 file (the file is parsed with CRX2 logic despite being a CRX3 format file). HOWEVER, the extension ID is CORRECTLY parsed if I drag&drop the exact same extension into the Chrome window created by Selenium.
