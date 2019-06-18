@@ -68,9 +68,10 @@ pub key: a60230820122300d06092a864886f70d01010105000382010f003082010a02820101008
 id: jnbggedlnjedoclkloemghehimmjlfea
 ```
 
-
 ### Other helpful tips
 
 You can find the CRX parsing code of Chromium [here](https://github.com/chromium/chromium/tree/master/components/crx_file)
 
 You can check the contents of both CRX files is byte-for-byte the same either by unzipping both files or checking their content from https://robwu.nl/crxviewer/
+
+Selenium-Webderive code for adding an extension [can be found here](https://github.com/SeleniumHQ/selenium/blob/d5a93cc0559fa27c367b71a212b0e613e1d9a7dd/javascript/node/selenium-webdriver/chrome.js#L426)
