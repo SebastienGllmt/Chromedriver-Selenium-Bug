@@ -30,7 +30,7 @@
     "cucumber": "5.1.0",
     "rimraf": "2.6.3",
     "selenium-webdriver": "4.0.0-alpha.3",
-    "minimist": "1.2.0",
+    "minimist": "1.2.3",
     "combine-streams": "1.0.0",
     "debug": "3.1.0",
     "unzip": "0.1.11"
